@@ -1,10 +1,10 @@
-var playList = {"Fugees":"Killing me softly"};
+var playlist = {"Fugees":"Killing me softly"};
 
-function updatePlaylist (playList, artistName, songTitle) {
-  Object.assign({}, playList, { artistName: [songTitle] });
+function updatePlaylist (playlist, artistName, songTitle) {
+  Object.assign({}, playlist, { artistName: [songTitle] });
 }
 
-function removeFromPlaylist (playList, artistName) {
-  delete playList.artistName;
-  return playList;
+function removeFromPlaylist (playlist, artistName) {
+  delete playlist.artistName;
+  return playlist;
 }
